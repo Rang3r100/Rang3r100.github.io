@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>College Of Engineering Chengannur</title>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="javascript/js.js="></script>
+
+</head>
+<body class="body">
+<header class="mainheader">
+	<img src="images/logo.png">
+	<content id="search">
+		<form>
+  <input type="text" name="search" placeholder="Search..." onclick="window.location.href='search.html'">
+</form>
+	</content>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="course.html">Course</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="login.html">Login</a></li>
+			
+		</ul> 
+	</nav>
+</header>
+<br>
+<div class="slideshow-container">
+
+<div class="iambrpslides fade">
+  <div class="numbertext">01 / 03</div>
+  <img src="./images/a.png">
+ </div>
+
+<div class="iambrpslides fade">
+  <div class="numbertext">02 / 03</div>
+  <img src="./images/b.png">
+  </div>
+
+<div class="iambrpslides fade">
+  <div class="numbertext">03 / 03</div>
+  <img src="./images/c.png">
+</div>
+
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("iambrpslides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+}
+</script>
+<br>
+		
+		<script type="text/javascript">
+  document.title="Home";
+</script>
+		
+				
+<script src="scripts/slider.js"></script>
+<div class="mainContent">
+	<div class="Content">
+		<article class="topContent">
+			<header>
+			 <h3><a href="#" title="about">About</a>	</h3>  
+			</header>
+			<content>
+<p>The College of Engineering Chengannur, an institution of excellence in the domain of technical education, was established in the year 1993, with a vision to create engineers having the drive, skill, and confidence to become the pioneers of tomorrow. The college functions with the highest order of discipline so that all students are trained to excel in highly professional environments.
+</p>
+			</content>
+		</article>
+
+		<article class="bottomContent">
+			<header>
+			<h3><a href="#" title="courses">Courses</a>	</h3>  
+			</header>
+			<content>
+<p>B.Tech  - Computer Science and Engineering</p>
+<p>B.Tech  - Electronics & Communication Engineering</p>
+<p>B.Tech  - Electrical & Electronics Engineering</p>
+<p>B.Tech  - CSE (Artificial Intelligence & Machine Learning)</p>
+<p>Master of Computer Application</p>
+			</content>
+		</article>
+
+		
+	</div>
+</div>
+<aside class="top-sidebar">
+	<article>
+		<h3>Welcome All!</h3>
+		<p>Build a career path.</p>
+	</article>
+</aside>
+
+<aside class="middle-sidebar">
+	<article>
+		<h3>Chase Your Dreams</h3>
+		<p>We help to reach your carrer goals.</p>
+	</article>
+</aside>
+
+<aside class="buttom-sidebar">
+	<article>
+		<h3>Explore</h3>
+		<p>Explore the college life.</p>
+	</article>
+</aside>
+<footer class="mainFooter">
+	<p>Copyright & Copy <a href="https://www.facebook.com/CollegeOfEngineeringChengannur">College Of Engineering Chengannur</a> </p>
+</footer>
+
+</body>
+</html>
